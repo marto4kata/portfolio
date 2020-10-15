@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+}
+
+:root {
+    --main-white: #f0f0f0;
+    --main-red: #be3144;
+    --main-blue: #45567d;
+    --main-gray: #303841;
+    --header-height: 90px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.header {
+    background-color: var(--main-red);
+    height: var(--header-height);
+    width: 100%;
+    position: fixed;
+}
+
+.nav {
+    height: var(--header-height);
+    justify-content: flex-end;
+}
+
+.nav-div {
+    width: 300px;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#navbar a {
+    font-size: 25px;
+    color: var(--main-white);
+}
+
+#navbar a:hover {
+    font-size: 30px;
+}
+
+#welcome-section {
+    height: 100vh;
+    background-color: #000;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    align-items: center;
+    justify-content: center;
+}
+
+#welcome {
+    color: var(--main-white);
+    font-size: xxx-large;
+    margin: 0;
+}
+
+#welcome-description {
+    color: var(--main-red);
+    font-size: xx-large;
+    font-style: italic;
+    justify-content: center;
+    margin: 0;
+}
+
+#projects {
+    background-color: var(--main-blue);
+    padding-bottom: 20px;
+}
+
+.section-title {
+    margin: 0;
+    padding-top: 30px;
+    text-align: center;
+    color: var(--main-white);
+    font-size: 30px;
+}
+
+
+.projects-area {
+    padding-top: 40px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#projects img {
+    width: 480px;
+    height: 260px;
+}
+
+#projects img:hover {
+    width: 500px;
+    height: 300px;
+}
+
+#projects-area a {
+    display: flex;
+    flex-direction: column;
+    color: var(--main-white);
+    padding-bottom: 50px;
+}
+
+#projects span {
+    text-align: center;
+    font-size: large;
+}
+
+#additional-info {
+    text-align: center;
+    font-size: xx-large;
+}
+
+#additional-info a {
+    color: var(--main-white);
+}
+
+#additional-info a:hover {
+    font-size: 30px;
+    background-color: darkslateblue;
+}
+
+#contacts {
+    background-color: var(--main-gray);
+    height: 30vh;
+}
+
+#contacts-links {
+    height: 50px;
+    justify-content: center;
+}
+
+#contacts a {
+    color: var(--main-white);
+    font-size: x-large;
+    align-self: flex-end;
+}
+
+#contacts a:hover {
+    font-size: large;
+}
+
+@media only screen and (max-width: 815px) {
+    #header {
+        position: absolute;
+    }
+}
